@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="@{/student}" th:object="${student}" method="Post">
+		Enter Username: <input type="text" th:field="*{Username}"/><br>
+		
+		Enter Contact_no:<input type="int" th:field="*{Contact_no}"/><br>
+		Enter Email:<input type="email" th:field="*{Email}"/><br>
+		Enter Password:<input type="password" th:field="*{Password}"/><br>
+		<input type="submit" value="submit">
+	</form>
+
+</body>
+</html>
